@@ -8,7 +8,7 @@ public class Voyage {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
     private Integer depart; // l'horaire de départ
-    private Integer arrivee; // l'horaire d'arrivée estimée
+    private Integer duree; // la duree du voyage
     private String destination; // la destination du voyage
     @Embedded
     private Programme programme;
@@ -33,12 +33,12 @@ public class Voyage {
         this.depart = depart;
     }
 
-    public Integer getArrivee() {
-        return arrivee;
+    public Integer get Duree() {
+        return  duree;
     }
 
-    public void setArrivee(Integer arrivee) {
-        this.arrivee = arrivee;
+    public void setDuree(Integer duree) {
+        this. duree =  duree;
     }
 
     public String getDestination() {
@@ -57,4 +57,3 @@ public class Voyage {
         this.programme = programme;
     }
 }
- 
